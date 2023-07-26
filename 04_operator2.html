@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //nullish 병합 연산자 : 무조건 Null값과 undefined만 거짓으로 처리
+
+        // let n = 0
+        // let num1 = n || 7
+        // console.log(num1)
+
+        let n = 0
+        let num1 = n ?? 7
+        //nullish를 나타내는 기호가 ??인데, 이걸 쓰게 되면 0이라고 출력됨 0은 null 값이 아니므로
+        console.log(num1)
+        console.log(null ?? 1)//이 경우 1이라고 출력
+        console.log(undefined ?? 2)//이 경우 2라고 출력
+        console.log(null ?? 1 ?? 2)//이 경우 1이 출력
+        console.log(false ?? 1)//이 경우 false가 출력
+        console.log(0 ?? 1 ?? 2)//이 경우 0이 출력됨
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
