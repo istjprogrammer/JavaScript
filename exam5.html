@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        window.onload = function(){
+            
+            }
+
+    </script>
+
+</head>
+<body>
+    <form name="f">
+        ID : <input type="text" name="id"/><br><br><!--대문자 입력 focusblur 활용-->
+        E-mail : <input type="text" name="email" /><br><br>
+        password: <input type="password" name="pw" /><br><br>
+        주민번호:<input type="text" name="ssn1" />
+        - <input type="text" name="ssn2" /><br><br>
+        남자<input type="radio" name="gender" value="남자"/><br>
+        여자<input type="radio" name="gender" value="여자"/><br><br>
+        주소 :<input type="text" name="addr"/>
+        <br><br>
+        <input type = "button" id= "btnSubmit" value="전송"/>
+        </form>
+</body>
+</html>
+
+<!--
+    1. ID를 입력한 다음에 다음 양식으로 커서를 옮기면, 입력한 ID를 자동으로 대문자로 변경
+        => keyup 테그 활용 OR 스타일 태그에 uppercase를 입력
+    2. 이메일이 제대로 입력되었는지 체크
+        잘못 입력된 경우 "올바르게 입력하세요" 라는 메세지를 출력
+        => 유효성 검사
+    3. 패스워드에 반드시 4글자 이상 입력되도록 한다.
+        => 유효성 검사
+    4. 주민번호 뒷자리의 첫글자가 1또는 3이면 남자 라디오 박스에 체크되게 하고,
+        2 또는 4일 경우 여자 라디오에 체크되게 하기.
+    5. 각 항 공통으로 값을 입력하지 않으면 "반드시 값을 입력"이라는 메세지를 출력
+        => 전송버튼을 눌렀을 때 한곳이라도 빈 곳이 있다면 이러한 메세지가 출력되도록 하기
+-->
