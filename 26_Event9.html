@@ -33,7 +33,7 @@
             //         console.log(ev.target.value)
             //     }
             // })
-
+                
             /////////////////////////////////
 
             const formEl = document.querySelector("form")
@@ -48,8 +48,9 @@
                     formEl.classList.remove('active')
                 })
 
-                el.addEventListener("blur", ev =>{
+                el.addEventListener("change", ev =>{
                     console.log(ev.target.value)
+                    //change를 누르면 입력을 하고 탭 키를 쳤을 때 콘솔창에 값이 출력됨
                 })
             })
         }
